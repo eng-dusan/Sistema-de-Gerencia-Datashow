@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.Region?>
+<BorderPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atividade.EquipmentRegController">
+    <top>
+        <Label text="REGISTRAR EQUIPAMENTO" style="-fx-text-fill: #FFFFFF; -fx-font-family: 'Segoe UI'; -fx-font-size: 28px; -fx-font-weight: bold;" BorderPane.alignment="CENTER"/>
+    </top>
+    <left>
+        <Region prefHeight="150.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Region prefHeight="150.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+    </right>
+    <bottom>
+        <HBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+            <Button fx:id="backButton" style="-fx-background-color: #E74C3C; -fx-text-fill: white; -fx-background-radius: 5px; -fx-padding: 10px 20px;" text="Voltar" />
+            <Button fx:id="registerButton" style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-background-radius: 5px; -fx-padding: 10px 20px;" text="Cadastrar" />
+        </HBox>
+    </bottom>
+    <center>
+        <VBox spacing="20" alignment="CENTER" BorderPane.alignment="CENTER">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Nome:" style="-fx-text-fill: #BDC3C7; -fx-font-size: 18px;" />
+                <TextField fx:id="nameField" style="-fx-background-color: #34495E; -fx-text-fill: #ECF0F1; -fx-border-color: #16A085; -fx-background-radius: 5px; -fx-padding: 5;" />
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Descrição:" style="-fx-text-fill: #BDC3C7; -fx-font-size: 18px;" />
+                <TextField fx:id="descriptionField" style="-fx-background-color: #34495E; -fx-text-fill: #ECF0F1; -fx-border-color: #16A085; -fx-background-radius: 5px; -fx-padding: 5;" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

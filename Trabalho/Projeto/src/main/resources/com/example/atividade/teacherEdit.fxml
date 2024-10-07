@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.atividade.TeacherEditController" style="-fx-background-color: #1C1C1C;">
+    <children>
+        <VBox spacing="20" alignment="CENTER" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+            <Label text="Editar Professor" style="-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="RA:" prefWidth="100" style="-fx-text-fill: #BDC3C7;"/>
+                <TextField fx:id="raField" style="-fx-background-color: #34495E; -fx-text-fill: #ECF0F1; -fx-border-color: #3498DB; -fx-padding: 10;"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Nome:" prefWidth="100" style="-fx-text-fill: #BDC3C7;"/>
+                <TextField fx:id="usernameField" style="-fx-background-color: #34495E; -fx-text-fill: #ECF0F1; -fx-border-color: #3498DB; -fx-padding: 10;"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Disciplina:" prefWidth="100" style="-fx-text-fill: #BDC3C7;"/>
+                <TextField fx:id="subjectField" style="-fx-background-color: #34495E; -fx-text-fill: #ECF0F1; -fx-border-color: #3498DB; -fx-padding: 10;"/>
+            </HBox>
+
+            <Button text="Salvar" onAction="#handleSaveButtonAction" style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-background-radius: 10px; -fx-padding: 10 20;"/>
+        </VBox>
+    </children>
+</AnchorPane>

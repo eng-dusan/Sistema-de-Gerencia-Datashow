@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atividade.MenuController">
+    <center>
+        <VBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+           <Label style="-fx-text-fill: white; -fx-font-size: 30px; -fx-font-family: 'Segoe UI'; -fx-font-weight: bold;" text="MENU" />
+
+            <Button fx:id="teacherButton" style="-fx-background-color: #2ECC71; -fx-text-fill: white; -fx-background-radius: 5px; -fx-padding: 10 20;" text="PROFESSOR" />
+            <Button fx:id="equipmentButton" style="-fx-background-color: #E74C3C; -fx-text-fill: white; -fx-background-radius: 5px; -fx-padding: 10 20;" text="EQUIPAMENTO" />
+            <Button fx:id="backButton" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 5px; -fx-padding: 10 20;" text="Voltar" />
+        </VBox>
+    </center>
+</BorderPane>

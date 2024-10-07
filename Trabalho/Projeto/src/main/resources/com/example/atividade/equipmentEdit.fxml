@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.Region?>
+<BorderPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atividade.EquipmentEditController">
+    <top>
+        <Label text="EDITAR EQUIPAMENTO" style="-fx-text-fill: #FFFFFF; -fx-font-family: 'Segoe UI'; -fx-font-size: 28px; -fx-font-weight: bold;" BorderPane.alignment="CENTER"/>
+    </top>
+    <left>
+        <Region prefHeight="150.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Region prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+    </right>
+    <bottom>
+        <Region prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </bottom>
+    <center>
+        <VBox spacing="20" alignment="CENTER" BorderPane.alignment="CENTER">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Nome:" prefWidth="120" style="-fx-font-size: 16px; -fx-text-fill: #BDC3C7;" />
+                <TextField fx:id="nameField" promptText="Insira o nome" style="-fx-background-color: #34495E; -fx-text-fill: #ECF0F1; -fx-font-size: 14px; -fx-padding: 10px; -fx-border-color: #444;" />
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Descrição:" prefWidth="120" style="-fx-font-size: 16px; -fx-text-fill: #BDC3C7;" />
+                <TextField fx:id="descriptionField" promptText="Insira a descrição" style="-fx-background-color: #34495E; -fx-text-fill: #ECF0F1; -fx-font-size: 14px; -fx-padding: 10px; -fx-border-color: #444;" />
+            </HBox>
+
+            <Button text="Salvar" onAction="#handleSaveButtonAction" style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 5px; -fx-padding: 10px 20px;"/>
+        </VBox>
+    </center>
+</BorderPane>
